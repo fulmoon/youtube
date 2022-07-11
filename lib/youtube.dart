@@ -6,15 +6,13 @@ class Youtube extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Text('aa', style: TextStyle(fontSize: 200)),
-            Text('aa', style: TextStyle(fontSize: 200)),
-            Text('aa', style: TextStyle(fontSize: 200)),
-            Text('aa', style: TextStyle(fontSize: 200)),
-          ],
-        ),
+      body: ListView(
+        children: [
+          Text('aa', style: TextStyle(fontSize: 200)),
+          Text('aa', style: TextStyle(fontSize: 200)),
+          Text('aa', style: TextStyle(fontSize: 200)),
+          Text('aa', style: TextStyle(fontSize: 200)),
+        ],
       ),
     );
   }

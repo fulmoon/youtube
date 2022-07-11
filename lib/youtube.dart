@@ -6,13 +6,11 @@ class Youtube extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        children: [
-          Text('aa', style: TextStyle(fontSize: 200)),
-          Text('aa', style: TextStyle(fontSize: 200)),
-          Text('aa', style: TextStyle(fontSize: 200)),
-          Text('aa', style: TextStyle(fontSize: 200)),
-        ],
+      body: ListView.builder(
+        itemCount: 1000,
+        itemBuilder: (BuildContext context, int index) { //함수, 새로 정의해야 함. index: 아이템의 인텍스 번호)
+          return Text('aa', style: TextStyle(fontSize: 200),);
+        }
       ),
     );
   }

@@ -5,14 +5,15 @@ class Youtube extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text('aa', style: TextStyle(),),
-        Text('aa'),
-        Text('aa'),
-        Text('aa'),
-      ],
-
+    return Scaffold(
+      body: Column(
+        children: [
+          Text('aa', style: TextStyle(fontSize: 200),),
+          Text('aa', style: TextStyle(fontSize: 200),),
+          Text('aa', style: TextStyle(fontSize: 200),),
+          Text('aa', style: TextStyle(fontSize: 200),),
+        ],
+      ),
     );
   }
 }

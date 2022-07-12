@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youtube/home_screen.dart';
 
 class Youtube extends StatelessWidget {
   Youtube({Key? key}) : super(key: key);
@@ -16,6 +17,10 @@ class Youtube extends StatelessWidget {
             return GestureDetector(
               onTap: (){
                 print('${items[index]}');
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HomeScreen()),
+                );
               },
               child: Column(
                 children: [
